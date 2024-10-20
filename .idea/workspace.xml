@@ -4,21 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51d0f4a-aa51-4e83-ac40-c5c8158dbfb8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MFTI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html_parser/elements/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html_parser/elements/folder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html_parser/soup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webdriver/driver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webdriver/session.py" afterDir="false" />
+    <list default="true" id="b51d0f4a-aa51-4e83-ac40-c5c8158dbfb8" name="Changes" comment="first">
+      <change afterPath="$PROJECT_DIR$/app/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/schemas/model_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/schemas/user_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/validates/user_validate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/validates/valid_values.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/load_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/model.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process_user_service/data/columns.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process_user_service/input_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process_user_service/input_form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process_user_service/preprocessing/encode_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process_user_service/preprocessing/standard_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_parser/elements/data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_parser/elements/folder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_parser/soup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdriver/driver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdriver/session.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,22 +59,36 @@
   "keyToString": {
     "Python.TreapNode.executor": "Run",
     "Python.bst.executor": "Run",
+    "Python.get.executor": "Run",
     "Python.graph.executor": "Run",
+    "Python.input_data.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.number_parser.executor": "Run",
     "Python.parser.executor": "Run",
+    "Python.phone_data.executor": "Run",
+    "Python.phone_parser (1).executor": "Run",
+    "Python.pool.executor": "Run",
     "Python.tree.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/andre/TyuiuProjectParser/MFTI/model"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\model" />
+      <recent name="C:\Users\andre\TyuiuProjectParser\MFTI" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\app" />
+      <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\app\validates" />
+      <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\quackr" />
       <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\html_parser\elements" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="TreapNode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.input_data">
+    <configuration name="get" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MFTI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,11 +97,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/heap" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/redis_store" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heap/TreapNode.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/redis_store/get.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -85,7 +110,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="bst" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="input_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MFTI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,33 +119,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graphs" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/process_user_service" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graphs/bst.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MFTI" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/process_user_service/input_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,7 +154,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="phone_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MFTI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -160,11 +163,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graphs" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/html_parser/elements" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graphs/tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/html_parser/elements/phone_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MFTI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pool.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.input_data" />
         <item itemvalue="Python.parser" />
-        <item itemvalue="Python.TreapNode" />
-        <item itemvalue="Python.bst" />
-        <item itemvalue="Python.tree" />
+        <item itemvalue="Python.pool" />
+        <item itemvalue="Python.get" />
+        <item itemvalue="Python.phone_data" />
       </list>
     </recent_temporary>
   </component>
@@ -199,6 +224,19 @@
       <option name="presentableId" value="Default" />
       <updated>1712669736423</updated>
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <option name="closed" value="true" />
+      <created>1727729760388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727729760388</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
 </project>
