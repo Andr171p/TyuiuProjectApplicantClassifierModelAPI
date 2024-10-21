@@ -23,6 +23,7 @@ class UserVector(UserFeatures):
         self.features[f'Вид приема_{self.user.type_of_reception}'].append(True)
         self.features[f'Направление подготовки_{self.user.speciality}'].append(True)
         self.features = add_false_to_dict(dict_data=self.features)
+        print(self.features)
 
     def dataframe(self) -> DataFrame:
         dataframe = DataFrame(data=self.features)

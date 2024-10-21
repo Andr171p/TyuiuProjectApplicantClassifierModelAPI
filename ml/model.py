@@ -8,5 +8,5 @@ class BinaryClassifierModel(LoadModel):
         self._model = self.load_random_forrest_model()
 
     def predict(self, x: Any) -> Any:
-        predicted = self._model.predict(x=x)
+        predicted = self._model.predict(x)
         return predicted[0]
