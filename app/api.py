@@ -40,7 +40,7 @@ async def get_hello_world() -> JSONResponse:
 
 
 @router.post(path="/predict_user/", response_model=APIResponseModelPredictSchema)
-async def post_predict_user(user: UserValidate) -> JSONResponse:
+async def post_predict_user(user: UserSchema) -> JSONResponse:
     _user = await add_user(user=user)
     preprocessed_user = await preprocessing_user(user=_user)
     predicted_user = model.predict(preprocessed_user)
