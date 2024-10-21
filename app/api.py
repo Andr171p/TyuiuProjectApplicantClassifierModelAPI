@@ -48,11 +48,10 @@ async def predict_user(user: UserSchema) -> JSONResponse:
     user_processing = UserProcessing(user=user)
     processed_user = user_processing.process_user()
     prediction = model.predict(x=processed_user)
-    prediction_response = ModelPredictSchema.model_validate(prediction)
     return JSONResponse(
         content={
             "status": "ok",
-            "data": prediction_response.model_dump()
+            "data": prediction
         }
     )
 
