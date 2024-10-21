@@ -24,7 +24,7 @@ class UserVector(UserFeatures):
         self.features[f'Направление подготовки_{self.user.speciality}'].append(True)
         self.features = add_false_to_dict(dict_data=self.features)
 
-    def dataframe(self) -> Any[DataFrame, None]:
+    def dataframe(self) -> DataFrame:
         dataframe = DataFrame(data=self.features)
         return dataframe
 
