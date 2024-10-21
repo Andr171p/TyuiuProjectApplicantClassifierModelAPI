@@ -7,7 +7,9 @@ from typing import Any
 from pandas import DataFrame
 
 
-class UserVector(UserFeatures):
+class UserVector:
+    features = UserFeatures.features
+
     def __init__(self, user: User) -> None:
         self.user = user
 
