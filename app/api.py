@@ -5,14 +5,16 @@ from app.schemas.model_schema import (
     APIResponseModelPredictSchema,
     APIResponseModelPredictAllSchema
 )
-from app.manager import (
-    add_user,
-    preprocessing_user
+from app.schemas.user_schema import (
+    UserSchema,
+    UsersSchema
 )
-from app.schemas.user_schema import UserSchema
-from app.validates.user_validate import UserValidate
+from app.utils import create_user
 
 from ml.model import BinaryClassifierModel
+
+from client.user import User
+from client.process import UserProcessing, UsersProcessing
 
 from typing import List
 
@@ -20,7 +22,7 @@ from typing import List
 router = APIRouter()
 
 
-model = None
+model = BinaryClassifierModel()
 
 
 @router.on_event("startup")
@@ -40,13 +42,31 @@ async def get_hello_world() -> JSONResponse:
 
 
 @router.post(path="/predict_user/", response_model=APIResponseModelPredictSchema)
-async def post_predict_user(user: UserSchema) -> JSONResponse:
-    _user = await add_user(user=user)
-    preprocessed_user = await preprocessing_user(user=_user)
-    predicted_user = model.predict(preprocessed_user)
+async def predict_user(user: UserSchema) -> JSONResponse:
+    user = create_user(user=user)
+    user_processing = UserProcessing(user=user)
+    processed_user = user_processing.process_user()
+    prediction = model.predict(x=processed_user)
     return JSONResponse(
         content={
             "status": "ok",
-            "data": predicted_user
+            "data": prediction
+        }
+    )
+
+
+@router.post(path="/predict_users/", response_model=APIResponseModelPredictAllSchema)
+async def predict_users(users: UsersSchema) -> JSONResponse:
+    list_of_users: List[User] = []
+    for user in users.users:
+        user = create_user(user=user)
+        list_of_users.append(user)
+    users_processing = UsersProcessing(users=list_of_users)
+    processed_users = users_processing.process_users()
+    predictions = model.predict(x=processed_users)
+    return JSONResponse(
+        content={
+            "status": "ok",
+            "data": predictions
         }
     )

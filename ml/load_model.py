@@ -1,8 +1,8 @@
-from typing import Any
-
 import joblib
 
-from misc.utils import get_root_path
+from typing import Any
+
+from client.utils import get_root_path
 
 
 class LoadModel:

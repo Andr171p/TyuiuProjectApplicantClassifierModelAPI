@@ -1,7 +1,6 @@
-from pydantic import (
-    BaseModel,
-    field_validator
-)
+from pydantic import BaseModel
+
+from typing import List
 
 
 class UserSchema(BaseModel):
@@ -15,3 +14,7 @@ class UserSchema(BaseModel):
     form_of_education: str
     type_of_reception: str
     speciality: str
+
+
+class UsersSchema(BaseModel):
+    users: List[UserSchema]
