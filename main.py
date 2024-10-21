@@ -1,17 +1,25 @@
-import pandas as pd
-import numpy as np
+import uvicorn
+
+from fastapi import FastAPI
+
+from app.api import router
+from app.settings.network import AppNetwork
 
 
-DROP_COLUMNS = [
-            'Unnamed: 0', 'Иностранный язык', 'Иностранное гражданство', 'Согласие на зачисление', 'Приказ о зачислении'
-        ]
+app = FastAPI(
+    title="Predict applicant API"
+)
 
-df = pd.read_csv(r"C:\Users\andre\PycharmProjects\OrderStatusService\ТИУ Абитуриенты 2019-2024 Model.csv")
-df = df.drop(DROP_COLUMNS, axis=1)
-print(df.columns)
-df = pd.get_dummies(df)
-print(df.columns)
-print(df.shape)
-columns = df.columns
-c = columns.to_numpy()
-np.savetxt("process_user_service/data/columns.csv", c, fmt='%s', encoding='utf-8')
+app.include_router(
+    router=router,
+    prefix="/api/applicant_classifier_service",
+    tags=["applicant_classifier_service"]
+)
+
+
+if __name__ == "__main__":
+    uvicorn.run(
+        app=app,
+        host=AppNetwork.HOST,
+        port=AppNetwork.PORT
+    )

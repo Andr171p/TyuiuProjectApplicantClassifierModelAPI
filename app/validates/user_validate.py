@@ -10,22 +10,40 @@ from app.validates.valid_values import (
 
 
 class UserValidate(UserSchema):
-    @field_validator('gender')
-    def validate_gender(self, value) -> str:
+    @field_validator("gender")
+    def validate_gender(self, value: str) -> str:
         if value not in VALID_GENDERS:
             raise ValueError(f"Gender must be {VALID_GENDERS}")
         return value
 
-    @field_validator('needs_hostel')
-    def validate_needs_hostel(self, value) -> str:
+    @field_validator("needs_hostel")
+    def validate_needs_hostel(self, value: str) -> str:
         if value not in VALID_NEEDS_HOSTELS:
             raise ValueError(f"Needs hostel must be in {VALID_NEEDS_HOSTELS}")
         return value
 
-    @field_validator('entrance_exam_form')
-    def validate_entrance_exam_form(self, value) -> str:
-        if value not in VALID_ENTRANCE_EXAM_FORM:
-            raise ValueError(f"Entrance exam form must be in {VALID_ENTRANCE_EXAM_FORM}")
+    @field_validator("average_rate")
+    def validate_average_rate(self, value: float) -> float:
+        if not (1 <= value <= 5):
+            raise ValueError(f"Average rate must be in range(1, 5)")
+        return value
+
+    @field_validator("priority")
+    def validate_priority(self, value: int) -> int:
+        if value not in range(2, 6):
+            raise ValueError("Priority must be in range(1, 5)")
+        return value
+
+    @field_validator("total_exam_points")
+    def validate_total_exam_points(self, value: int) -> int:
+        if value not in range(0, 310):
+            raise ValueError("Total exam points must be in range(0, 300)")
+        return value
+
+    @field_validator("total_bonus_points")
+    def validate_total_bonus_points(self, value: int) -> int:
+        if value not in range(0, 11):
+            raise ValueError("Total bonus points must be in range(0, 10)")
         return value
 
     @field_validator('education')

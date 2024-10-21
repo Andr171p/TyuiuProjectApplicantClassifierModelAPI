@@ -3,7 +3,7 @@ from pydantic import (
     ConfigDict
 )
 
-from typing import Literal
+from typing import List, Literal
 
 
 class ModelPredictSchema(BaseModel):
@@ -15,3 +15,8 @@ class ModelPredictSchema(BaseModel):
 class APIResponseModelPredictSchema(BaseModel):
     status: Literal['ok'] = 'ok'
     data: ModelPredictSchema
+
+
+class APIResponseModelPredictAllSchema(BaseModel):
+    status: Literal['ok'] = 'ok'
+    data: List[ModelPredictSchema]
