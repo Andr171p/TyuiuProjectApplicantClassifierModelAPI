@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51d0f4a-aa51-4e83-ac40-c5c8158dbfb8" name="Changes" comment="API applicant predict service 1.0.8">
-      <change beforePath="$PROJECT_DIR$/app/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api.py" afterDir="false" />
+    <list default="true" id="b51d0f4a-aa51-4e83-ac40-c5c8158dbfb8" name="Changes" comment="API applicant predict service 1.0.11">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/vector.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/vector.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +304,31 @@
       <option name="project" value="LOCAL" />
       <updated>1729548940678</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="API applicant predict service 1.0.9">
+      <option name="closed" value="true" />
+      <created>1729549424766</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729549424766</updated>
+    </task>
+    <task id="LOCAL-00014" summary="API applicant predict service 1.0.10">
+      <option name="closed" value="true" />
+      <created>1729549610235</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729549610235</updated>
+    </task>
+    <task id="LOCAL-00015" summary="API applicant predict service 1.0.11">
+      <option name="closed" value="true" />
+      <created>1729550009195</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729550009195</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -318,6 +344,9 @@
     <MESSAGE value="API applicant predict service 1.0.6" />
     <MESSAGE value="API applicant predict service 1.0.7" />
     <MESSAGE value="API applicant predict service 1.0.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="API applicant predict service 1.0.8" />
+    <MESSAGE value="API applicant predict service 1.0.9" />
+    <MESSAGE value="API applicant predict service 1.0.10" />
+    <MESSAGE value="API applicant predict service 1.0.11" />
+    <option name="LAST_COMMIT_MESSAGE" value="API applicant predict service 1.0.11" />
   </component>
 </project>

@@ -9,6 +9,7 @@ from pandas import DataFrame
 class UserProcessing(UserVector):
 
     def add_user(self) -> DataFrame:
+        self.vector()
         self.insert()
         user_dataframe = self.dataframe()
         return user_dataframe

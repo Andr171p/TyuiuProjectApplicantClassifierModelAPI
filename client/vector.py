@@ -8,10 +8,13 @@ from pandas import DataFrame
 
 
 class UserVector:
-    features = UserFeatures.features
+    features: UserFeatures.features = None
 
     def __init__(self, user: User) -> None:
         self.user = user
+
+    def vector(self) -> None:
+        self.features = UserFeatures.features
 
     def insert(self) -> None:
         self.features['Пол'].append(self.user.gender)
