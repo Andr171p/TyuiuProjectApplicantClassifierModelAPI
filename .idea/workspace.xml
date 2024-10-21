@@ -4,26 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51d0f4a-aa51-4e83-ac40-c5c8158dbfb8" name="Changes" comment="API applicant predict service 1.0.1">
-      <change afterPath="$PROJECT_DIR$/app/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/features.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/matrix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/preprocessing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/vector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/manager.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas/user_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas/user_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/validates/user_validate.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/validates/user_validate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/utils.py" afterDir="false" />
+    <list default="true" id="b51d0f4a-aa51-4e83-ac40-c5c8158dbfb8" name="Changes" comment="API applicant predict service 1.0.4">
       <change beforePath="$PROJECT_DIR$/ml/load_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml/load_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml/random_forrest_model.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/ml/random_forrest_model.joblib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/data/columns.csv" beforeDir="false" afterPath="$PROJECT_DIR$/client/columns.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/input.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/preprocessing/encode.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/preprocessing/standard.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +243,31 @@
       <option name="project" value="LOCAL" />
       <updated>1729519233133</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="API applicant predict service 1.0.2">
+      <option name="closed" value="true" />
+      <created>1729545881532</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729545881532</updated>
+    </task>
+    <task id="LOCAL-00007" summary="API applicant predict service 1.0.3">
+      <option name="closed" value="true" />
+      <created>1729546012616</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729546012616</updated>
+    </task>
+    <task id="LOCAL-00008" summary="API applicant predict service 1.0.4">
+      <option name="closed" value="true" />
+      <created>1729546141082</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729546141082</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -270,6 +276,9 @@
     <MESSAGE value="API applicant predict service" />
     <MESSAGE value="API applicant predict service 1.0.0" />
     <MESSAGE value="API applicant predict service 1.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="API applicant predict service 1.0.1" />
+    <MESSAGE value="API applicant predict service 1.0.2" />
+    <MESSAGE value="API applicant predict service 1.0.3" />
+    <MESSAGE value="API applicant predict service 1.0.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="API applicant predict service 1.0.4" />
   </component>
 </project>

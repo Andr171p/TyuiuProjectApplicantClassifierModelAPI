@@ -6,7 +6,7 @@ from client.utils import get_root_path
 
 
 class LoadModel:
-    RANDOM_FORREST_MODEL_PATH = fr"{get_root_path()}/model/random_forrest_model.joblib"
+    RANDOM_FORREST_MODEL_PATH = fr"{get_root_path()}/ml/random_forrest_model.joblib"
 
     @classmethod
     def load_random_forrest_model(cls) -> Any:

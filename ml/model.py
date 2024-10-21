@@ -1,4 +1,4 @@
-from ml.load_model import LoadModel
+from ml.load import LoadModel
 
 from typing import Any
 
