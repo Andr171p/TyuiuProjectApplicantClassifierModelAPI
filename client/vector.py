@@ -17,6 +17,7 @@ class UserVector:
         logger.info(self.user)
 
     def vector(self) -> None:
+        self.features = None
         self.features = UserFeatures.features
 
     def insert(self) -> None:
