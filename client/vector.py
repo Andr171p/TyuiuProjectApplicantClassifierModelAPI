@@ -6,12 +6,15 @@ from typing import Any
 
 from pandas import DataFrame
 
+from loguru import logger
+
 
 class UserVector:
     features: UserFeatures.features = None
 
     def __init__(self, user: User) -> None:
         self.user = user
+        logger.info(self.user)
 
     def vector(self) -> None:
         self.features = UserFeatures.features
@@ -28,7 +31,7 @@ class UserVector:
         self.features[f'Вид приема_{self.user.type_of_reception}'].append(True)
         self.features[f'Направление подготовки_{self.user.speciality}'].append(True)
         self.features = add_false_to_dict(dict_data=self.features)
-        print(self.features)
+        logger.info(self.features)
 
     def dataframe(self) -> DataFrame:
         dataframe = DataFrame(data=self.features)

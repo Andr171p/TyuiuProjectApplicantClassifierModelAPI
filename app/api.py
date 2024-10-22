@@ -42,7 +42,8 @@ async def get_hello_world() -> JSONResponse:
     )
 
 
-@router.post(path="/predict_user/", response_model=APIResponseModelPredictSchema)
+# @router.post(path="/predict_user/", response_model=APIResponseModelPredictSchema)
+@router.post(path="/predict_user/")
 async def predict_user(user: UserSchema) -> JSONResponse:
     user = create_user(user=user)
     user_processing = UserProcessing(user=user)

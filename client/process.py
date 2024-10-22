@@ -5,6 +5,8 @@ from client.preprocessing import binary, standard
 
 from pandas import DataFrame
 
+from loguru import logger
+
 
 class UserProcessing(UserVector):
 
@@ -31,6 +33,7 @@ class UsersProcessing(UserMatrix):
         users_dataframe = self.add_users()
         users_dataframe = binary(dataframe=users_dataframe)
         users_dataframe = standard(dataframe=users_dataframe)
+        logger.info(users_dataframe)
         return users_dataframe
 
 
