@@ -1,6 +1,6 @@
 from client.features import UserFeatures
 from client.user import User
-from client.utils import add_false_to_dict
+from client.utils import replace_nan
 
 from typing import List
 
@@ -23,7 +23,7 @@ class UserMatrix(UserFeatures):
             self.features[f'Форма обучения_{user.form_of_education}'].append(True)
             self.features[f'Вид приема_{user.type_of_reception}'].append(True)
             self.features[f'Направление подготовки_{user.speciality}'].append(True)
-            self.features = add_false_to_dict(dict_data=self.features)
+            self.features = replace_nan(dict_data=self.features)
             print(self.features)
 
     def dataframe(self) -> DataFrame:
