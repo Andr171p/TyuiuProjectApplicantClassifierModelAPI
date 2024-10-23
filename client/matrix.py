@@ -1,17 +1,20 @@
-from client.features import UserFeatures
+from client.features import user_features
 from client.user import User
 from client.utils import replace_nan
 
-from typing import List
+from typing import Dict, List
 
 from pandas import DataFrame
 
 
-class UserMatrix(UserFeatures):
+class UserMatrix:
+    features: Dict[str, List] | None = None
+
     def __init__(self, users: List[User]) -> None:
         self.users = users
 
     def insert(self) -> None:
+        self.features = user_features()
         for user in self.users:
             self.features['Пол'].append(user.gender)
             self.features['Нуждается в общежитии'].append(user.needs_hostel)
@@ -28,4 +31,5 @@ class UserMatrix(UserFeatures):
 
     def dataframe(self) -> DataFrame:
         dataframe = DataFrame(data=self.features)
+        self.features = None
         return dataframe

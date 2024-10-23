@@ -1,8 +1,8 @@
 from client.user import User
-from client.features import UserFeatures
+from client.features import user_features
 from client.utils import replace_nan
 
-from typing import Any
+from typing import Any, Dict, List
 
 from pandas import DataFrame
 
@@ -10,16 +10,14 @@ from loguru import logger
 
 
 class UserVector:
-    def __init__(self, user: User, user_features: UserFeatures) -> None:
+    features: Dict[str, List] | None = None
+
+    def __init__(self, user: User) -> None:
         self.user = user
-        self.features = user_features.features
         logger.info(self.user)
 
-    def vector(self) -> None:
-        self.features = None
-        self.features = UserFeatures.features
-
     def insert(self) -> None:
+        self.features = user_features()
         self.features['Пол'].append(self.user.gender)
         self.features['Нуждается в общежитии'].append(self.user.needs_hostel)
         self.features['Ср. балл док-та об образовании'].append(self.user.average_rate)
@@ -35,5 +33,6 @@ class UserVector:
 
     def dataframe(self) -> DataFrame:
         dataframe = DataFrame(data=self.features)
+        self.features = None
         return dataframe
 
