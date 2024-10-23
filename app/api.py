@@ -15,7 +15,6 @@ from app.utils import create_user
 from ml.model import BinaryClassifierModel
 
 from client.user import User
-from client.features import UserFeatures
 from client.process import UserProcessing, UsersProcessing
 
 from typing import List
@@ -47,11 +46,7 @@ async def get_hello_world() -> JSONResponse:
 @router.post(path="/predict_user/")
 async def predict_user(user: UserSchema) -> JSONResponse:
     user = create_user(user=user)
-    user_features = UserFeatures()
-    user_processing = UserProcessing(
-        user=user,
-        user_features=user_features
-    )
+    user_processing = UserProcessing(user=user)
     processed_user = user_processing.process_user()
     prediction = model.predict(x=processed_user)
     return JSONResponse(
