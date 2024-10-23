@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51d0f4a-aa51-4e83-ac40-c5c8158dbfb8" name="Changes" comment="API applicant predict service 1.0.14" />
+    <list default="true" id="b51d0f4a-aa51-4e83-ac40-c5c8158dbfb8" name="Changes" comment="API applicant predict service 1.0.15">
+      <change afterPath="$PROJECT_DIR$/ml/models/logistic_regression_model.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/features.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/vector.py" beforeDir="false" afterPath="$PROJECT_DIR$/client/vector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml/load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml/random_forrest_model.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/ml/models/random_forrest_model.joblib" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,21 +60,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/andre/TyuiuProjectParser/MFTI/ml"
+    "last_opened_file_path": "C:/Users/andre/TyuiuProjectParser/MFTI/ml/models"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\ml\models" />
       <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\ml" />
       <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\model" />
       <recent name="C:\Users\andre\TyuiuProjectParser\MFTI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\ml\models" />
       <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\client" />
       <recent name="C:\Users\andre\TyuiuProjectParser\MFTI" />
       <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\app" />
       <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\app\validates" />
-      <recent name="C:\Users\andre\TyuiuProjectParser\MFTI\quackr" />
     </key>
   </component>
   <component name="RunManager" selected="Python.user">
@@ -349,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729583249434</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="API applicant predict service 1.0.15">
+      <option name="closed" value="true" />
+      <created>1729583685480</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1729583685480</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -371,6 +389,7 @@
     <MESSAGE value="API applicant predict service 1.0.12" />
     <MESSAGE value="API applicant predict service 1.0.13" />
     <MESSAGE value="API applicant predict service 1.0.14" />
-    <option name="LAST_COMMIT_MESSAGE" value="API applicant predict service 1.0.14" />
+    <MESSAGE value="API applicant predict service 1.0.15" />
+    <option name="LAST_COMMIT_MESSAGE" value="API applicant predict service 1.0.15" />
   </component>
 </project>

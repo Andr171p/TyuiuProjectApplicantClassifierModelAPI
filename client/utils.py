@@ -16,10 +16,10 @@ def load_columns() -> List[str]:
         return columns
 
 
-def dict_from_str_list(str_list: List[str]) -> dict:
+def dict_columns(columns: List[str]) -> dict:
     _dict = dict()
-    for key in str_list:
-        _dict[key] = []
+    for column in columns:
+        _dict[column] = []
     return _dict
 
 
@@ -28,11 +28,11 @@ def df_from_dict(dict_data: Dict[str, List]) -> DataFrame:
     return df
 
 
-def add_false_to_dict(dict_data: Dict[str, List]) -> dict:
+def replace_nan(dict_data: Dict[str, List], value: bool = False) -> dict:
     keys = dict_data.keys()
     for key in keys:
         if len(dict_data[key]) == 0:
-            dict_data[key].append(False)
+            dict_data[key].append(value)
     return dict_data
 
 

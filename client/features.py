@@ -1,11 +1,9 @@
-from client.utils import load_columns, dict_from_str_list
+from client.utils import load_columns, dict_columns
 
 from typing import Dict, List
 
-from loguru import logger
-
 
 class UserFeatures:
-    features: Dict[str, List] = dict_from_str_list(
-        str_list=load_columns()
+    features: Dict[str, List] = dict_columns(
+        columns=load_columns()
     )
