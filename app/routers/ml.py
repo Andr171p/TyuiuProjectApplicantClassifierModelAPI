@@ -30,6 +30,7 @@ async def predict_user(user: UserSchema) -> JSONResponse:
     model = g.binary_classifier_model
     processed_user = UserProcessing(user=user).process_user()
     prediction = model.predict_probability(x=processed_user)
+    print(prediction)
     return JSONResponse(
         content={
             'status': 'ok',
