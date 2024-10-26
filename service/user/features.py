@@ -1,4 +1,4 @@
-from client.utils import load_columns, dict_columns
+from service.utils import load_columns, dict_columns
 
 from typing import Dict, List
 

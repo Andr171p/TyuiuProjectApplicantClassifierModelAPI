@@ -7,7 +7,7 @@ from pandas import DataFrame
 
 def load_columns() -> List[str]:
     root_path = Path(__file__).resolve().parents[1]
-    file_path = fr"{root_path}/client/columns.csv"
+    file_path = fr"{root_path}\service\storage\columns.csv"
     columns: List[Any] = []
     with open(file=file_path, mode='r', encoding='utf-8') as file:
         reader = csv.reader(file, delimiter=',')

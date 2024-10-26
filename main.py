@@ -1,25 +1,40 @@
-import uvicorn
-
 from fastapi import FastAPI
 
-from app.api import router
-from app.settings.network import AppNetwork
+from app.routers.ml import ml_router
+from app.routers.docs import docs_router
+from app.globals import g, GlobalMiddleware
+
+from ml.model import BinaryClassifierModel
+
+from contextlib import asynccontextmanager
+from loguru import logger
 
 
-app = FastAPI(
-    title="Predict applicant API"
-)
-
-app.include_router(
-    router=router,
-    prefix="/api/applicant_classifier_service",
-    tags=["applicant_classifier_service"]
-)
+@asynccontextmanager
+async def lifespan(app: FastAPI) -> None:
+    model = BinaryClassifierModel()
+    g.set_default("binary_classifier_model", model)
+    logger.info("startup Fastapi")
+    yield
+    del model
 
 
-if __name__ == "__main__":
-    uvicorn.run(
-        app=app,
-        host=AppNetwork.HOST,
-        port=AppNetwork.PORT
+def get_fastapi_app():
+    fastapi_app = FastAPI(
+        title="Predict applicant API",
+        lifespan=lifespan
     )
+    fastapi_app.include_router(
+        router=ml_router,
+        prefix='/ml',
+        tags=['Ml router']
+    )
+    fastapi_app.include_router(
+        router=docs_router,
+        tags=['Docs']
+    )
+    fastapi_app.add_middleware(GlobalMiddleware)
+    return fastapi_app
+
+
+app = get_fastapi_app()

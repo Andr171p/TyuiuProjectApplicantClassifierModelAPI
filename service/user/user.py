@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from typing import List
 
 
-class UserSchema(BaseModel):
+class User(BaseModel):
     gender: str
     needs_hostel: str
     average_rate: float
@@ -16,5 +16,5 @@ class UserSchema(BaseModel):
     speciality: str
 
 
-class UsersSchema(BaseModel):
-    users: List[UserSchema]
+class Users(BaseModel):
+    users: List[User]
