@@ -4,39 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51d0f4a-aa51-4e83-ac40-c5c8158dbfb8" name="Changes" comment="API applicant predict service 1.0.21">
-      <change afterPath="$PROJECT_DIR$/app/configuration/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/globals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/docs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/ml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/schemas/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/schemas/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/schemas/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ml/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/preprocessing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/structure/matrix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/structure/vector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/user/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas/model_schema.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas/user_schema.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/settings/network.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/validates/user_validate.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/validates/valid_values.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/columns.csv" beforeDir="false" afterPath="$PROJECT_DIR$/service/storage/columns.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/features.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/user/features.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/matrix.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/preprocessing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/vector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml/load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml/model.py" afterDir="false" />
+    <list default="true" id="b51d0f4a-aa51-4e83-ac40-c5c8158dbfb8" name="Changes" comment="API applicant predict service 2.0.3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routers/ml.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/ml.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +41,7 @@
     "Python.graph.executor": "Run",
     "Python.input_data.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.ml.executor": "Run",
     "Python.number_parser.executor": "Run",
     "Python.parser.executor": "Run",
     "Python.phone_data.executor": "Run",
@@ -105,7 +76,29 @@
       <recent name="C:\Users\andre\TyuiuProjectParser\MFTI" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.process (1)">
+  <component name="RunManager" selected="Python.ml">
+    <configuration name="ml" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MFTI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/routers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/routers/ml.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="process (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MFTI" />
       <option name="ENV_FILES" value="" />
@@ -194,35 +187,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="MFTI" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/client" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client/utils.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ml" />
         <item itemvalue="Python.process (1)" />
         <item itemvalue="Python.user" />
         <item itemvalue="Python.utils (1)" />
         <item itemvalue="Python.process" />
-        <item itemvalue="Python.utils" />
       </list>
     </recent_temporary>
   </component>
@@ -442,14 +413,42 @@
       <option name="project" value="LOCAL" />
       <updated>1729708532955</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="API applicant predict service 2.0.0">
+      <option name="closed" value="true" />
+      <created>1729973488124</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1729973488124</updated>
+    </task>
+    <task id="LOCAL-00027" summary="API applicant predict service 2.0.1">
+      <option name="closed" value="true" />
+      <created>1729973625426</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1729973625426</updated>
+    </task>
+    <task id="LOCAL-00028" summary="API applicant predict service 2.0.2">
+      <option name="closed" value="true" />
+      <created>1729973715798</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1729973715798</updated>
+    </task>
+    <task id="LOCAL-00029" summary="API applicant predict service 2.0.3">
+      <option name="closed" value="true" />
+      <created>1729973903236</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1729973903236</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first" />
-    <MESSAGE value="1.0.0" />
-    <MESSAGE value="API applicant predict service" />
-    <MESSAGE value="API applicant predict service 1.0.0" />
     <MESSAGE value="API applicant predict service 1.0.1" />
     <MESSAGE value="API applicant predict service 1.0.2" />
     <MESSAGE value="API applicant predict service 1.0.3" />
@@ -471,6 +470,10 @@
     <MESSAGE value="API applicant predict service 1.0.19" />
     <MESSAGE value="API applicant predict service 1.0.20" />
     <MESSAGE value="API applicant predict service 1.0.21" />
-    <option name="LAST_COMMIT_MESSAGE" value="API applicant predict service 1.0.21" />
+    <MESSAGE value="API applicant predict service 2.0.0" />
+    <MESSAGE value="API applicant predict service 2.0.1" />
+    <MESSAGE value="API applicant predict service 2.0.2" />
+    <MESSAGE value="API applicant predict service 2.0.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="API applicant predict service 2.0.3" />
   </component>
 </project>

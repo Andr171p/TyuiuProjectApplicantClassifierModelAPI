@@ -26,7 +26,7 @@ ml_router = APIRouter()
 
 @ml_router.post(path='/predict_user/', response_model=APIResponseModelPredictionSchema)
 async def predict_user(user: UserSchema) -> JSONResponse:
-    user = User.model_validate(user)
+    user = User.model_validate(user.model_dump())
     model = g.binary_classifier_model
     processed_user = UserProcessing(user=user).process_user()
     prediction = model.predict_probability(x=processed_user)
@@ -40,7 +40,7 @@ async def predict_user(user: UserSchema) -> JSONResponse:
 
 @ml_router.post(path='/predict_users/', response_model=APIResponseModelPredictionsSchema)
 async def predict_users(users: UsersSchema) -> JSONResponse:
-    users = Users.model_validate(users)
+    users = Users.model_validate(users.model_dump())
     model = g.binary_classifier_model
     precessed_users = UsersProcessing(users=users).process_users()
     predictions = model.predict_probability(x=precessed_users)
