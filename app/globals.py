@@ -58,7 +58,23 @@ async def global_middleware_dispatch(
     return await ctx.run(_call_next)
 
 
-class GlobalMiddleware(BaseHTTPMiddleware):
+class MyBaseHTTPMiddleware(BaseHTTPMiddleware):
+
+    async def __call__(self, scope, receive, send):
+        try:
+            await super().__call__(scope, receive, send)
+        except RuntimeError as exc:
+            if str(exc) == 'No response returned.':
+                request = Request(scope, receive=receive)
+                if await request.is_disconnected():
+                    return
+            raise
+
+    async def dispatch(self, request, call_next):
+        raise NotImplementedError()
+
+
+class GlobalMiddleware(MyBaseHTTPMiddleware):
     def __init__(self, app: ASGIApp) -> None:
         super().__init__(app, global_middleware_dispatch)
 
