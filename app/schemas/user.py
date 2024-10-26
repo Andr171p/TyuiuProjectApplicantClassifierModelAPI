@@ -20,7 +20,7 @@ class UsersSchema(BaseModel):
     users: List[UserSchema]
 
 
-class UserValidate(UserSchema):
+'''class UserValidate(UserSchema):
     @field_validator('gender')
     def validate_gender(self, v):
         if v not in ['М', 'Ж']:
@@ -31,4 +31,4 @@ class UserValidate(UserSchema):
     def validate_exam_points(self, v):
         if v < 0 or v > 300:
             raise ValueError('Exam points must be between 0 and 300')
-        return v
+        return v'''
