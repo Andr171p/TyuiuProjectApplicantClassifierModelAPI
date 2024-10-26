@@ -36,7 +36,7 @@ class UsersProcessing(UserMatrix):
 
 from service.user.user import User
 
-user = User(
+'''user = User(
     gender="М",
     needs_hostel="да",
     average_rate=5.0,
@@ -49,4 +49,4 @@ user = User(
     speciality="20.03.01 Техносферная безопасность"
 )
 
-print(UserProcessing(user=user).process_user())
+print(UserProcessing(user=user).process_user())'''

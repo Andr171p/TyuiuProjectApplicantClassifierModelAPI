@@ -27,7 +27,7 @@ def get_fastapi_app():
     fastapi_app.include_router(
         router=ml_router,
         prefix='/ml',
-        tags=['Ml router']
+        tags=['Ml']
     )
     fastapi_app.include_router(
         router=docs_router,

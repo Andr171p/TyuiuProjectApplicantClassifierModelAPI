@@ -24,7 +24,7 @@ from service.process import (
 ml_router = APIRouter()
 
 
-@ml_router.post(path='predict_user', response_model=APIResponseModelPredictionSchema)
+@ml_router.post(path='/predict_user/', response_model=APIResponseModelPredictionSchema)
 async def predict_user(user: UserSchema) -> JSONResponse:
     user = User.model_validate(user)
     model = g.binary_classifier_model
@@ -38,7 +38,7 @@ async def predict_user(user: UserSchema) -> JSONResponse:
     )
 
 
-@ml_router.post(path='predict_users', response_model=APIResponseModelPredictionsSchema)
+@ml_router.post(path='/predict_users/', response_model=APIResponseModelPredictionsSchema)
 async def predict_users(users: UsersSchema) -> JSONResponse:
     users = Users.model_validate(users)
     model = g.binary_classifier_model
