@@ -34,7 +34,7 @@ async def predict_user(user: UserSchema) -> JSONResponse:
     return JSONResponse(
         content={
             'status': 'ok',
-            'data': 1 - prediction[-1]
+            'data': prediction[-1]
         }
     )
 

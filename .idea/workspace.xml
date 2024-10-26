@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b51d0f4a-aa51-4e83-ac40-c5c8158dbfb8" name="Changes" comment="API applicant predict service 2.0.5">
+    <list default="true" id="b51d0f4a-aa51-4e83-ac40-c5c8158dbfb8" name="Changes" comment="API applicant predict service 2.0.8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routers/ml.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/ml.py" afterDir="false" />
     </list>
@@ -460,13 +460,34 @@
       <option name="project" value="LOCAL" />
       <updated>1729977051045</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="API applicant predict service 2.0.6">
+      <option name="closed" value="true" />
+      <created>1729977490164</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1729977490164</updated>
+    </task>
+    <task id="LOCAL-00033" summary="API applicant predict service 2.0.7">
+      <option name="closed" value="true" />
+      <created>1729977679021</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1729977679021</updated>
+    </task>
+    <task id="LOCAL-00034" summary="API applicant predict service 2.0.8">
+      <option name="closed" value="true" />
+      <created>1729977938055</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1729977938055</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="API applicant predict service 1.0.3" />
-    <MESSAGE value="API applicant predict service 1.0.4" />
-    <MESSAGE value="API applicant predict service 1.0.5" />
     <MESSAGE value="API applicant predict service 1.0.6" />
     <MESSAGE value="API applicant predict service 1.0.7" />
     <MESSAGE value="API applicant predict service 1.0.8" />
@@ -489,6 +510,9 @@
     <MESSAGE value="API applicant predict service 2.0.3" />
     <MESSAGE value="API applicant predict service 2.0.4" />
     <MESSAGE value="API applicant predict service 2.0.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="API applicant predict service 2.0.5" />
+    <MESSAGE value="API applicant predict service 2.0.6" />
+    <MESSAGE value="API applicant predict service 2.0.7" />
+    <MESSAGE value="API applicant predict service 2.0.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="API applicant predict service 2.0.8" />
   </component>
 </project>
